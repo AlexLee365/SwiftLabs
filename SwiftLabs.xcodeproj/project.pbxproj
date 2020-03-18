@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C798CC2D8C7FF47B8F58724 /* Pods_SwiftLabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DE88BD911E4BBA4927A180 /* Pods_SwiftLabs.framework */; };
 		C55F3BA72422046E00F766D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F3BA62422046E00F766D3 /* AppDelegate.swift */; };
 		C55F3BA92422046E00F766D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F3BA82422046E00F766D3 /* SceneDelegate.swift */; };
-		C55F3BAB2422046E00F766D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F3BAA2422046E00F766D3 /* ViewController.swift */; };
 		C55F3BAE2422046E00F766D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55F3BAC2422046E00F766D3 /* Main.storyboard */; };
 		C55F3BB02422046F00F766D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55F3BAF2422046F00F766D3 /* Assets.xcassets */; };
 		C55F3BB32422046F00F766D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55F3BB12422046F00F766D3 /* LaunchScreen.storyboard */; };
+		C55F3BBB24220EBC00F766D3 /* GlowingAnimationTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F3BBA24220EBC00F766D3 /* GlowingAnimationTestViewController.swift */; };
+		C55F3BBD24220F0600F766D3 /* ProgressViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F3BBC24220F0600F766D3 /* ProgressViewTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D65F180566C4DEB08C5F69E /* Pods-SwiftLabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLabs.release.xcconfig"; path = "Target Support Files/Pods-SwiftLabs/Pods-SwiftLabs.release.xcconfig"; sourceTree = "<group>"; };
 		C55F3BA32422046E00F766D3 /* SwiftLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55F3BA62422046E00F766D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C55F3BA82422046E00F766D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C55F3BAA2422046E00F766D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C55F3BAD2422046E00F766D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C55F3BAF2422046F00F766D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C55F3BB22422046F00F766D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C55F3BB42422046F00F766D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C55F3BBA24220EBC00F766D3 /* GlowingAnimationTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingAnimationTestViewController.swift; sourceTree = "<group>"; };
+		C55F3BBC24220F0600F766D3 /* ProgressViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewTestViewController.swift; sourceTree = "<group>"; };
+		C8577CAF676A75D7C0925AC1 /* Pods-SwiftLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLabs.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLabs/Pods-SwiftLabs.debug.xcconfig"; sourceTree = "<group>"; };
+		E2DE88BD911E4BBA4927A180 /* Pods_SwiftLabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C798CC2D8C7FF47B8F58724 /* Pods_SwiftLabs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73B68FE4C42C29209FBA5A5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2DE88BD911E4BBA4927A180 /* Pods_SwiftLabs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BED77BDCBB0D156E6BBA9B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8577CAF676A75D7C0925AC1 /* Pods-SwiftLabs.debug.xcconfig */,
+				8D65F180566C4DEB08C5F69E /* Pods-SwiftLabs.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C55F3B9A2422046E00F766D3 = {
 			isa = PBXGroup;
 			children = (
 				C55F3BA52422046E00F766D3 /* SwiftLabs */,
 				C55F3BA42422046E00F766D3 /* Products */,
+				8BED77BDCBB0D156E6BBA9B1 /* Pods */,
+				73B68FE4C42C29209FBA5A5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +83,31 @@
 			isa = PBXGroup;
 			children = (
 				C55F3BA62422046E00F766D3 /* AppDelegate.swift */,
-				C55F3BA82422046E00F766D3 /* SceneDelegate.swift */,
-				C55F3BAA2422046E00F766D3 /* ViewController.swift */,
-				C55F3BAC2422046E00F766D3 /* Main.storyboard */,
-				C55F3BAF2422046F00F766D3 /* Assets.xcassets */,
-				C55F3BB12422046F00F766D3 /* LaunchScreen.storyboard */,
-				C55F3BB42422046F00F766D3 /* Info.plist */,
+				C55F3BBA24220EBC00F766D3 /* GlowingAnimationTestViewController.swift */,
+				C55F3BBC24220F0600F766D3 /* ProgressViewTestViewController.swift */,
+				C55F3BBF242212CA00F766D3 /* SupportingFiles */,
+				C55F3BBE242212A400F766D3 /* Legacy */,
 			);
 			path = SwiftLabs;
+			sourceTree = "<group>";
+		};
+		C55F3BBE242212A400F766D3 /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				C55F3BA82422046E00F766D3 /* SceneDelegate.swift */,
+				C55F3BAC2422046E00F766D3 /* Main.storyboard */,
+				C55F3BB12422046F00F766D3 /* LaunchScreen.storyboard */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
+		C55F3BBF242212CA00F766D3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C55F3BAF2422046F00F766D3 /* Assets.xcassets */,
+				C55F3BB42422046F00F766D3 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C55F3BB72422046F00F766D3 /* Build configuration list for PBXNativeTarget "SwiftLabs" */;
 			buildPhases = (
+				3ED9AF2042CB089BCBA5DBCE /* [CP] Check Pods Manifest.lock */,
 				C55F3B9F2422046E00F766D3 /* Sources */,
 				C55F3BA02422046E00F766D3 /* Frameworks */,
 				C55F3BA12422046E00F766D3 /* Resources */,
+				F901D9056DED4448F32E31B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +178,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3ED9AF2042CB089BCBA5DBCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftLabs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F901D9056DED4448F32E31B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftLabs/Pods-SwiftLabs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftLabs/Pods-SwiftLabs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftLabs/Pods-SwiftLabs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C55F3B9F2422046E00F766D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C55F3BAB2422046E00F766D3 /* ViewController.swift in Sources */,
+				C55F3BBB24220EBC00F766D3 /* GlowingAnimationTestViewController.swift in Sources */,
 				C55F3BA72422046E00F766D3 /* AppDelegate.swift in Sources */,
+				C55F3BBD24220F0600F766D3 /* ProgressViewTestViewController.swift in Sources */,
 				C55F3BA92422046E00F766D3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,11 +370,13 @@
 		};
 		C55F3BB82422046F00F766D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8577CAF676A75D7C0925AC1 /* Pods-SwiftLabs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AVJM299X4;
-				INFOPLIST_FILE = SwiftLabs/Info.plist;
+				INFOPLIST_FILE = SwiftLabs/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +390,13 @@
 		};
 		C55F3BB92422046F00F766D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D65F180566C4DEB08C5F69E /* Pods-SwiftLabs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AVJM299X4;
-				INFOPLIST_FILE = SwiftLabs/Info.plist;
+				INFOPLIST_FILE = SwiftLabs/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
