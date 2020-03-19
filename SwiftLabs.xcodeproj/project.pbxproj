@@ -15,6 +15,7 @@
 		C55F3BB32422046F00F766D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55F3BB12422046F00F766D3 /* LaunchScreen.storyboard */; };
 		C55F3BBB24220EBC00F766D3 /* GlowingAnimationTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F3BBA24220EBC00F766D3 /* GlowingAnimationTestViewController.swift */; };
 		C55F3BBD24220F0600F766D3 /* ProgressViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F3BBC24220F0600F766D3 /* ProgressViewTestViewController.swift */; };
+		C55F3BC12422286C00F766D3 /* AppleLoginTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F3BC02422286C00F766D3 /* AppleLoginTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		C55F3BB42422046F00F766D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C55F3BBA24220EBC00F766D3 /* GlowingAnimationTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingAnimationTestViewController.swift; sourceTree = "<group>"; };
 		C55F3BBC24220F0600F766D3 /* ProgressViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewTestViewController.swift; sourceTree = "<group>"; };
+		C55F3BC02422286C00F766D3 /* AppleLoginTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginTestViewController.swift; sourceTree = "<group>"; };
+		C55F3BC224222A8C00F766D3 /* SwiftLabs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftLabs.entitlements; sourceTree = "<group>"; };
 		C8577CAF676A75D7C0925AC1 /* Pods-SwiftLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLabs.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLabs/Pods-SwiftLabs.debug.xcconfig"; sourceTree = "<group>"; };
 		E2DE88BD911E4BBA4927A180 /* Pods_SwiftLabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,8 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				C55F3BA62422046E00F766D3 /* AppDelegate.swift */,
+				C55F3BC02422286C00F766D3 /* AppleLoginTestViewController.swift */,
 				C55F3BBA24220EBC00F766D3 /* GlowingAnimationTestViewController.swift */,
 				C55F3BBC24220F0600F766D3 /* ProgressViewTestViewController.swift */,
+				C5716C702423113100500FFD /* Common */,
+				C5716C6F2423110E00500FFD /* Extensions */,
 				C55F3BBF242212CA00F766D3 /* SupportingFiles */,
 				C55F3BBE242212A400F766D3 /* Legacy */,
 			);
@@ -104,10 +110,25 @@
 		C55F3BBF242212CA00F766D3 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				C55F3BC224222A8C00F766D3 /* SwiftLabs.entitlements */,
 				C55F3BAF2422046F00F766D3 /* Assets.xcassets */,
 				C55F3BB42422046F00F766D3 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C5716C6F2423110E00500FFD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5716C702423113100500FFD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +250,7 @@
 				C55F3BA72422046E00F766D3 /* AppDelegate.swift in Sources */,
 				C55F3BBD24220F0600F766D3 /* ProgressViewTestViewController.swift in Sources */,
 				C55F3BA92422046E00F766D3 /* SceneDelegate.swift in Sources */,
+				C55F3BC12422286C00F766D3 /* AppleLoginTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +395,7 @@
 			baseConfigurationReference = C8577CAF676A75D7C0925AC1 /* Pods-SwiftLabs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftLabs/SupportingFiles/SwiftLabs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AVJM299X4;
 				INFOPLIST_FILE = SwiftLabs/SupportingFiles/Info.plist;
@@ -381,7 +404,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kf.AlexLeeDev.SwiftLabs;
+				PRODUCT_BUNDLE_IDENTIFIER = kf.AlexLeeDev.SwiftLabsJJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -393,6 +416,7 @@
 			baseConfigurationReference = 8D65F180566C4DEB08C5F69E /* Pods-SwiftLabs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftLabs/SupportingFiles/SwiftLabs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5AVJM299X4;
 				INFOPLIST_FILE = SwiftLabs/SupportingFiles/Info.plist;
@@ -401,7 +425,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kf.AlexLeeDev.SwiftLabs;
+				PRODUCT_BUNDLE_IDENTIFIER = kf.AlexLeeDev.SwiftLabsJJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
