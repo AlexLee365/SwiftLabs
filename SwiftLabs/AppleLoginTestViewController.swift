@@ -100,13 +100,30 @@ extension AppleLoginButton: ASAuthorizationControllerDelegate {
         if let credential = authorization.credential as? ASAuthorizationAppleIDCredential {
             print("---------------------------[Success]---------------------------")
             print("credential : ", credential)
-            print("token: ", credential.identityToken)
-            print("authorizationCode: ", credential.authorizationCode)
+            print("token: ", credential.identityToken as Any)
+            print("authorizationCode: ", credential.authorizationCode as Any)
             print("authorizedScopes: ", credential.authorizedScopes)
             print("realUserStatus: ", credential.realUserStatus.rawValue)
-            print("state: ", credential.state)
+            print("state: ", credential.state as Any)
             print("user: ", credential.user)
             print("email: ", credential.email ?? "")
+            print("fullName: ", credential.fullName ?? "")
+
+            ASAuthorizationAppleIDProvider().getCredentialState(forUserID: credential.user) { (state, error) in
+                print("state: ", state)
+                print("state rawvalue: ", state.rawValue)
+            }
+
+
+            do {
+//                let a = try JSONSerialization.jsonObject(with: credential.identityToken ?? Data(), options: [])
+                let tokenString = String(data: credential.identityToken ?? Data(), encoding: .utf8)
+                let codeString = String(data: credential.authorizationCode ?? Data(), encoding: .utf8)
+                print("⭐️ tokenString: ", tokenString)
+                print("⭐️ codeString: ", codeString)
+//            } catch let error {
+//                print("‼️ Error: ", error, " / ", error.localizedDescription)
+            }
         }
     }
 
