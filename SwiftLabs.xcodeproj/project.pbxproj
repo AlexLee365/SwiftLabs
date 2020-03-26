@@ -31,6 +31,7 @@
 		C55F3BBC24220F0600F766D3 /* ProgressViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewTestViewController.swift; sourceTree = "<group>"; };
 		C55F3BC02422286C00F766D3 /* AppleLoginTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginTestViewController.swift; sourceTree = "<group>"; };
 		C55F3BC224222A8C00F766D3 /* SwiftLabs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftLabs.entitlements; sourceTree = "<group>"; };
+		C567C663242C93AB009A2B48 /* SwiftLabs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftLabs.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C8577CAF676A75D7C0925AC1 /* Pods-SwiftLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLabs.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLabs/Pods-SwiftLabs.debug.xcconfig"; sourceTree = "<group>"; };
 		E2DE88BD911E4BBA4927A180 /* Pods_SwiftLabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,6 +68,7 @@
 		C55F3B9A2422046E00F766D3 = {
 			isa = PBXGroup;
 			children = (
+				C567C663242C93AB009A2B48 /* SwiftLabs.playground */,
 				C55F3BA52422046E00F766D3 /* SwiftLabs */,
 				C55F3BA42422046E00F766D3 /* Products */,
 				8BED77BDCBB0D156E6BBA9B1 /* Pods */,
