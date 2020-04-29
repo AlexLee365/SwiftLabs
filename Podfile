@@ -7,6 +7,7 @@ target 'SwiftLabs' do
 
   # Pods for SwiftLabs
 
+  pod 'Parchment'
   pod 'RxCocoa'
   pod 'RxSwift'
   pod 'RxKeyboard'

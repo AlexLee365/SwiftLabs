@@ -16,6 +16,14 @@
 		C55F3BBB24220EBC00F766D3 /* GlowingAnimationTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F3BBA24220EBC00F766D3 /* GlowingAnimationTestViewController.swift */; };
 		C55F3BBD24220F0600F766D3 /* ProgressViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F3BBC24220F0600F766D3 /* ProgressViewTestViewController.swift */; };
 		C55F3BC12422286C00F766D3 /* AppleLoginTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F3BC02422286C00F766D3 /* AppleLoginTestViewController.swift */; };
+		C59A177A2459725000D7EF51 /* ParchmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A17792459725000D7EF51 /* ParchmentViewController.swift */; };
+		C59A177C245972EE00D7EF51 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A177B245972EE00D7EF51 /* UITableView+.swift */; };
+		C59A177E2459732100D7EF51 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A177D2459732100D7EF51 /* UICollectionView+.swift */; };
+		C59A17802459734300D7EF51 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A177F2459734300D7EF51 /* UIColor+.swift */; };
+		C59A17822459736800D7EF51 /* UIScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A17812459736800D7EF51 /* UIScreen+.swift */; };
+		C59A1784245973C700D7EF51 /* SharedSequence+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A1783245973C700D7EF51 /* SharedSequence+.swift */; };
+		C59A17862459774300D7EF51 /* CustomPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A17852459774300D7EF51 /* CustomPagingViewController.swift */; };
+		C59A17882459779D00D7EF51 /* BasicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A17872459779D00D7EF51 /* BasicTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,14 @@
 		C55F3BC02422286C00F766D3 /* AppleLoginTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginTestViewController.swift; sourceTree = "<group>"; };
 		C55F3BC224222A8C00F766D3 /* SwiftLabs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftLabs.entitlements; sourceTree = "<group>"; };
 		C567C663242C93AB009A2B48 /* SwiftLabs.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftLabs.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		C59A17792459725000D7EF51 /* ParchmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParchmentViewController.swift; sourceTree = "<group>"; };
+		C59A177B245972EE00D7EF51 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		C59A177D2459732100D7EF51 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		C59A177F2459734300D7EF51 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		C59A17812459736800D7EF51 /* UIScreen+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+.swift"; sourceTree = "<group>"; };
+		C59A1783245973C700D7EF51 /* SharedSequence+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedSequence+.swift"; sourceTree = "<group>"; };
+		C59A17852459774300D7EF51 /* CustomPagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPagingViewController.swift; sourceTree = "<group>"; };
+		C59A17872459779D00D7EF51 /* BasicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableViewController.swift; sourceTree = "<group>"; };
 		C8577CAF676A75D7C0925AC1 /* Pods-SwiftLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLabs.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLabs/Pods-SwiftLabs.debug.xcconfig"; sourceTree = "<group>"; };
 		E2DE88BD911E4BBA4927A180 /* Pods_SwiftLabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,11 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				C55F3BA62422046E00F766D3 /* AppDelegate.swift */,
-				C55F3BC02422286C00F766D3 /* AppleLoginTestViewController.swift */,
-				C55F3BBA24220EBC00F766D3 /* GlowingAnimationTestViewController.swift */,
-				C55F3BBC24220F0600F766D3 /* ProgressViewTestViewController.swift */,
-				C5716C702423113100500FFD /* Common */,
-				C5716C6F2423110E00500FFD /* Extensions */,
+				C59A1774245970AA00D7EF51 /* Sources */,
 				C55F3BBF242212CA00F766D3 /* SupportingFiles */,
 				C55F3BBE242212A400F766D3 /* Legacy */,
 			);
@@ -122,6 +134,11 @@
 		C5716C6F2423110E00500FFD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C59A177B245972EE00D7EF51 /* UITableView+.swift */,
+				C59A177D2459732100D7EF51 /* UICollectionView+.swift */,
+				C59A177F2459734300D7EF51 /* UIColor+.swift */,
+				C59A17812459736800D7EF51 /* UIScreen+.swift */,
+				C59A1783245973C700D7EF51 /* SharedSequence+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -131,6 +148,53 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		C59A1774245970AA00D7EF51 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C59A1778245971ED00D7EF51 /* SwipePageViewControllerTest */,
+				C59A1777245971C100D7EF51 /* ProgressViewTest */,
+				C59A1776245971BA00D7EF51 /* GlowAnimationTest */,
+				C59A1775245971B000D7EF51 /* AppleLoginTest */,
+				C5716C702423113100500FFD /* Common */,
+				C5716C6F2423110E00500FFD /* Extensions */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C59A1775245971B000D7EF51 /* AppleLoginTest */ = {
+			isa = PBXGroup;
+			children = (
+				C55F3BC02422286C00F766D3 /* AppleLoginTestViewController.swift */,
+			);
+			path = AppleLoginTest;
+			sourceTree = "<group>";
+		};
+		C59A1776245971BA00D7EF51 /* GlowAnimationTest */ = {
+			isa = PBXGroup;
+			children = (
+				C55F3BBA24220EBC00F766D3 /* GlowingAnimationTestViewController.swift */,
+			);
+			path = GlowAnimationTest;
+			sourceTree = "<group>";
+		};
+		C59A1777245971C100D7EF51 /* ProgressViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				C55F3BBC24220F0600F766D3 /* ProgressViewTestViewController.swift */,
+			);
+			path = ProgressViewTest;
+			sourceTree = "<group>";
+		};
+		C59A1778245971ED00D7EF51 /* SwipePageViewControllerTest */ = {
+			isa = PBXGroup;
+			children = (
+				C59A17792459725000D7EF51 /* ParchmentViewController.swift */,
+				C59A17852459774300D7EF51 /* CustomPagingViewController.swift */,
+				C59A17872459779D00D7EF51 /* BasicTableViewController.swift */,
+			);
+			path = SwipePageViewControllerTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,10 +313,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C55F3BBB24220EBC00F766D3 /* GlowingAnimationTestViewController.swift in Sources */,
+				C59A17822459736800D7EF51 /* UIScreen+.swift in Sources */,
+				C59A17862459774300D7EF51 /* CustomPagingViewController.swift in Sources */,
 				C55F3BA72422046E00F766D3 /* AppDelegate.swift in Sources */,
+				C59A177E2459732100D7EF51 /* UICollectionView+.swift in Sources */,
 				C55F3BBD24220F0600F766D3 /* ProgressViewTestViewController.swift in Sources */,
+				C59A177C245972EE00D7EF51 /* UITableView+.swift in Sources */,
+				C59A1784245973C700D7EF51 /* SharedSequence+.swift in Sources */,
 				C55F3BA92422046E00F766D3 /* SceneDelegate.swift in Sources */,
 				C55F3BC12422286C00F766D3 /* AppleLoginTestViewController.swift in Sources */,
+				C59A17882459779D00D7EF51 /* BasicTableViewController.swift in Sources */,
+				C59A177A2459725000D7EF51 /* ParchmentViewController.swift in Sources */,
+				C59A17802459734300D7EF51 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
