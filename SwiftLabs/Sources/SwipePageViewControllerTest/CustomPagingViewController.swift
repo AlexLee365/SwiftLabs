@@ -12,11 +12,9 @@ import UIKit
 
 class CustomPagingViewController: PagingViewController {
     override func loadView() {
-        view = CustomPagingView(
-            options: options,
-            collectionView: collectionView,
-            pageView: pageViewController.view
-        )
+        view = CustomPagingView(options: options,
+                                collectionView: collectionView,
+                                pageView: pageViewController.view)
     }
 }
 
@@ -49,7 +47,6 @@ class CustomPagingView: PagingView {
             $0.height.equalTo(type(of: self).HeaderHeight)
             self.headerViewTopConstraint = $0.top.equalTo(self).constraint
         }
-
 
 //        headerView.addGestureRecognizer(tapGesture)
 

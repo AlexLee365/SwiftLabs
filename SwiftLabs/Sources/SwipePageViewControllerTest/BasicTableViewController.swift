@@ -11,7 +11,7 @@ import UIKit
 class TableViewController: UITableViewController, PageControlProtocol {
     private static let CellIdentifier = "CellIdentifier"
 
-    lazy var verticalScrollView: UIScrollView = tableView
+    lazy var pageTableView: UITableView = tableView
     var isHeaderViewFixed = false
 
     override func viewDidLoad() {

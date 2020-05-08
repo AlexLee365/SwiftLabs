@@ -12,14 +12,35 @@ import SnapKit
 import Parchment
 import UIKit
 
-protocol PageControlProtocol {
-    var verticalScrollView: UIScrollView { get }
+protocol PageControlProtocol: UIViewController {
+    var pageTableView: UITableView { get }
     var isHeaderViewFixed: Bool { get set }
 }
 
-class ParchmentViewController: UIViewController {
+extension PageControlProtocol {
+    func linkDestinationsPage(withStartPageOffsetY offsetY: CGFloat, startPageHeaderFixed: Bool) {
+        print("---------------------------[]---------------------------")
+        print("destination's content y: ", self.pageTableView.contentOffset.y)
 
-    let array = [TableViewController(), TableViewController(), TableViewController()]
+        if !startPageHeaderFixed {
+            print("헤더가 조정되고있으므로 현재 포인트로 통일시킵니다.")
+            let offset = min(-50, offsetY)
+            self.pageTableView.contentOffset.y = offset
+            self.isHeaderViewFixed = false
+
+        } else if self.isHeaderViewFixed != startPageHeaderFixed {
+            print("헤더가 고정된 상태인데, 다음 테이블뷰는 고정되지않았으므로 고정된 포인트로 통일시킵니다.")
+            let offset = min(-50, offsetY)
+            self.pageTableView.contentOffset.y = offset
+            self.isHeaderViewFixed = true
+        }
+
+        print("destination isHeaderViewSet: ", self.isHeaderViewFixed)
+    }
+}
+
+class ParchmentViewController: UIViewController {
+    let array: [PageControlProtocol] = [TableViewController(), TableViewController(), TableViewController()]
     private weak var pagingViewController: CustomPagingViewController!
 
     var currentIndex = 0
@@ -67,9 +88,9 @@ class ParchmentViewController: UIViewController {
         print("⭐️ height: ", height)
         let insets = UIEdgeInsets(top: height, left: 0, bottom: 0, right: 0)
         array.forEach {
-            $0.tableView.contentInset = insets
-            $0.tableView.scrollIndicatorInsets = insets
-            $0.tableView.delegate = self
+            $0.pageTableView.contentInset = insets
+            $0.pageTableView.scrollIndicatorInsets = insets
+            $0.pageTableView.delegate = self
 
         }
     }
@@ -98,27 +119,31 @@ extension ParchmentViewController: PagingViewControllerDelegate {
 
     func pagingViewController(_: PagingViewController, willScrollToItem pagingItem: PagingItem, startingViewController: UIViewController, destinationViewController: UIViewController) {
         guard let startingViewController = startingViewController as? PageControlProtocol,
-              var destinationViewController = destinationViewController as? PageControlProtocol else {
+              let destinationViewController = destinationViewController as? PageControlProtocol else {
                 return
         }
 
-        print("---------------------------[]---------------------------")
-        print("destination's content y: ", destinationViewController.verticalScrollView.contentOffset.y)
+        destinationViewController.linkDestinationsPage(withStartPageOffsetY: currentYOffset,
+                                                       startPageHeaderFixed: startingViewController.isHeaderViewFixed)
 
-        if !startingViewController.isHeaderViewFixed {
-            print("헤더가 조정되고있으므로 현재 포인트로 통일시킵니다.")
-            let offset = min(-50, currentYOffset)
-            destinationViewController.verticalScrollView.contentOffset.y = offset
-            destinationViewController.isHeaderViewFixed = false
-
-        } else if destinationViewController.isHeaderViewFixed != startingViewController.isHeaderViewFixed {
-            print("헤더가 고정된 상태인데, 다음 테이블뷰는 고정되지않았으므로 고정된 포인트로 통일시킵니다.")
-            let offset = min(-50, currentYOffset)
-            destinationViewController.verticalScrollView.contentOffset.y = offset
-            destinationViewController.isHeaderViewFixed = true
-        }
-
-        print("destination isHeaderViewSet: ", destinationViewController.isHeaderViewFixed)
+//        print("---------------------------[]---------------------------")
+//        print("destination's content y: ", destinationViewController.pageTableView.contentOffset.y)
+//
+//        if !startingViewController.isHeaderViewFixed {
+//            print("헤더가 조정되고있으므로 현재 포인트로 통일시킵니다.")
+//            let offset = min(-50, currentYOffset)
+//            destinationViewController.pageTableView.contentOffset.y = offset
+//            destinationViewController.isHeaderViewFixed = false
+//
+//        } else if destinationViewController.isHeaderViewFixed != startingViewController.isHeaderViewFixed {
+//            print("헤더가 고정된 상태인데, 다음 테이블뷰는 고정되지않았으므로 고정된 포인트로 통일시킵니다.")
+//            let offset = min(-50, currentYOffset)
+//            destinationViewController.pageTableView.contentOffset.y = offset
+//            destinationViewController.isHeaderViewFixed = true
+//        }
+//
+//        print("destination isHeaderViewSet: ", destinationViewController.isHeaderViewFixed)
+//    }
     }
 }
 
