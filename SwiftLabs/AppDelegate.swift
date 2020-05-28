@@ -29,9 +29,13 @@ private extension AppDelegate {
     private func injectRootViewController() -> UIViewController {
 //        let appleLoginTest = AppleLoginTestViewController()
 
-        let parchmentTest = UINavigationController(rootViewController: ParchmentViewController())
-        parchmentTest.navigationBar.barStyle = .black
+//        let parchmentTest = UINavigationController(rootViewController: ParchmentViewController())
+//        parchmentTest.navigationBar.barStyle = .black
 
-        return parchmentTest
+//        let pinterestTest = PinterestViewController()
+
+        let basic = BasicViewController()
+
+        return basic
     }
 }
