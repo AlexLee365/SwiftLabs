@@ -27,15 +27,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 private extension AppDelegate {
     private func injectRootViewController() -> UIViewController {
-//        let appleLoginTest = AppleLoginTestViewController()
+        var viewController: UIViewController!
+//        let viewController = AppleLoginTestViewController()
 
-//        let parchmentTest = UINavigationController(rootViewController: ParchmentViewController())
-//        parchmentTest.navigationBar.barStyle = .black
+        let parchmentTest = UINavigationController(rootViewController: ParchmentViewController())
+        parchmentTest.navigationBar.barStyle = .black
+        viewController = parchmentTest
 
-//        let pinterestTest = PinterestViewController()
+//        viewController = PinterestViewController()
 
-        let basic = BasicViewController()
+//        viewController = BasicViewController()
 
-        return basic
+        return viewController
     }
 }
