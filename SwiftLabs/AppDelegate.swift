@@ -30,13 +30,16 @@ private extension AppDelegate {
         var viewController: UIViewController!
 //        let viewController = AppleLoginTestViewController()
 
-        let parchmentTest = UINavigationController(rootViewController: ParchmentViewController())
-        parchmentTest.navigationBar.barStyle = .black
-        viewController = parchmentTest
+//        let parchmentTest = UINavigationController(rootViewController: ParchmentViewController())
+//        parchmentTest.navigationBar.barStyle = .black
+//        viewController = parchmentTest
 
 //        viewController = PinterestViewController()
 
-//        viewController = BasicViewController()
+        viewController = BasicViewController()
+
+//        viewController = RxTestViewController()
+
 
         return viewController
     }
