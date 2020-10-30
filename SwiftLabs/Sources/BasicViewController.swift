@@ -20,7 +20,9 @@ class BasicViewController: UIViewController {
         view.backgroundColor = .white
 
 //        textFieldDecimalTest()
-        textFieldWithLabelTest()
+//        textFieldWithLabelTest()
+
+        textView()
 
     }
 }
@@ -28,6 +30,24 @@ class BasicViewController: UIViewController {
 
 
 extension BasicViewController: UITextFieldDelegate {
+    func textView() {
+
+        let textView = UITextView()
+        textView.backgroundColor = UIColor.blue.withAlphaComponent(0.1)
+        textView.text = "LG화학은 또 전지 신설법인 설립 이후에도 기존 주주들을 위해 지배구조를 투명하게 유지하겠다고 밝혔다. 비상장 법인이지만 상장 법인에 준하는 기준을 적용해 투자자, 주주 등 이해 관계자들과 소통하겠다는 것이다. 이를 위해 LG화학의 사내이사 한 명 이상을 배터리 신설법인 이사회에 참여시키고, 외부 전문가를 사외이사로 선임하기로 했다. 또 LG화학주총에서 배터리 법인의 주요 경영 현안을 보고하고, 신설법인 대표는 연 1회 이상 LG화학주주를 대상으로 한 설명회를 열기로 했다."
+
+        textView.textContainer.maximumNumberOfLines = 1
+        textView.textContainer.lineBreakMode = .byTruncatingTail
+        view.addSubview(textView)
+
+        textView.snp.makeConstraints {
+            $0.center.equalToSuperview()
+            $0.width.equalTo(200)
+            $0.height.equalTo(200)
+        }
+
+
+    }
     func textFieldWithLabelTest() {
         let textField = CustomTextField()
 //        textField.delegate = self
